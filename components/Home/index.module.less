@@ -8,6 +8,36 @@
   }
   .sidebar {
     width: 300px;
+    padding-left: 20px;
+    padding-top: 30px;
+    .sidebar_content {
+      color: #333;
+      h3 {
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+      .tags {
+        .tags_content {
+          display: flex;
+          flex-wrap: wrap;
+          .tag {
+            margin: 0 10px 10px 0;
+            padding: 10px;
+            border-radius: 21px;
+            background-color: #f3f3f3;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover {
+              background-color: #e3e3e3;
+            }
+          }
+        }
+        .more {
+          color: #32952f;
+          margin: 20px 0;
+        }
+      }
+    }
   }
 }
 .divider {

@@ -2,8 +2,8 @@ import Link from 'next/link'
 import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import styles from './index.module.less'
-// import { Input } from 'antd'
-// import { SearchOutlined, EditOutlined } from '@ant-design/icons'
+import { Input } from 'antd'
+import { SearchOutlined, EditOutlined } from '@ant-design/icons'
 import avatar from '@/public/img/旦旦8.png'
 import Image from 'next/image'
 
@@ -34,9 +34,11 @@ const Header: FC<IProps> = () => {
           </nav>
         </div>
         <div className={styles.right}>
-          <div className={styles.search}>{/* <Input size="large" placeholder="Search" prefix={<SearchOutlined />} /> */}</div>
+          <div className={styles.search}>
+            <Input size="large" placeholder="Search" prefix={<SearchOutlined />} />
+          </div>
           <div className={styles.edit}>
-            {/* <EditOutlined style={{ fontSize: 24 }} /> */}
+            <EditOutlined style={{ fontSize: 24 }} />
             <span>Write</span>
           </div>
           <div className={styles.user}>
