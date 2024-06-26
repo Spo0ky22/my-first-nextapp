@@ -3,43 +3,137 @@
   margin: 0 auto;
   width: 1200px;
   height: calc(100vh - 61px);
+
   .main {
     flex: 1;
+    padding-right: 100px;
+    padding-left: 20px;
+
+    .list {
+      li {
+        display: flex;
+        border-bottom: #ccc solid 1px;
+        padding: 40px 0;
+        height: 200px;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        padding-right: 40px;
+        row-gap: 10px;
+
+        .info {
+          display: flex;
+          align-items: center;
+          column-gap: 5px;
+
+          .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+          }
+
+          .circle {
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: #666;
+          }
+
+          .date {
+            color: #666;
+          }
+        }
+
+        .title {
+          font-size: 20px;
+          font-weight: 600;
+          color: #333;
+        }
+
+        .content {
+          display: -webkit-box;
+          /* 必须的属性 */
+          -webkit-box-orient: vertical;
+          /* 必须的属性 */
+          -webkit-line-clamp: 3;
+          /* 控制显示的行数 */
+          overflow: hidden;
+          /* 隐藏超出的文本 */
+          text-overflow: ellipsis;
+          /* 使用省略号表示被截断的文本 */
+          max-height: calc(1.6em * 3);
+          /* 控制最大高度，确保适应行数 */
+          line-height: 1.6em;
+          /* 控制行高 */
+
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: end;
+
+        img {
+          width: 120px;
+          height: 120px;
+        }
+      }
+    }
   }
+
   .sidebar {
     width: 300px;
     padding-left: 20px;
     padding-top: 30px;
-    .sidebar_content {
-      color: #333;
-      h3 {
-        font-weight: 500;
-        margin-bottom: 20px;
-      }
-      .tags {
-        .tags_content {
-          display: flex;
-          flex-wrap: wrap;
-          .tag {
-            margin: 0 10px 10px 0;
-            padding: 10px;
-            border-radius: 21px;
-            background-color: #f3f3f3;
-            cursor: pointer;
-            transition: all 0.3s;
-            &:hover {
-              background-color: #e3e3e3;
-            }
+
+    color: #333;
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .tags {
+      .tags_content {
+        display: flex;
+        flex-wrap: wrap;
+
+        .tag {
+          margin: 0 10px 10px 0;
+          padding: 10px;
+          border-radius: 21px;
+          background-color: #f3f3f3;
+          cursor: pointer;
+          transition: all 0.3s;
+
+          &:hover {
+            background-color: #e3e3e3;
           }
         }
-        .more {
-          color: #32952f;
-          margin: 20px 0;
+      }
+
+      .more {
+        color: #32952f;
+        margin: 20px 0;
+      }
+    }
+
+    .categories {
+      .category_content {
+        padding-left: 15px;
+
+        .category {
+          margin-bottom: 10px;
         }
       }
     }
   }
 }
+
 .divider {
   height: 100%;
   width: 1px;

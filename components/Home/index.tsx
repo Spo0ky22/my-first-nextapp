@@ -2,6 +2,7 @@ import React, { memo } from 'react'
 import type { FC, ReactNode } from 'react'
 import styles from './index.module.less'
 import Sidebar from './Sidebar'
+import Main from './Main'
 
 interface IProps {
   children?: ReactNode
@@ -10,11 +11,9 @@ interface IProps {
 const Home: FC<IProps> = () => {
   return (
     <div className={styles.home}>
-      <div className={styles.main}>main</div>
+      <Main />
       <div className={styles.divider}></div>
-      <div className={styles.sidebar}>
-        <Sidebar />
-      </div>
+      <Sidebar />
     </div>
   )
 }

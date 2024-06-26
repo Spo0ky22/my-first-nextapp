@@ -9,7 +9,7 @@ interface IProps {
 
 const Sidebar: FC<IProps> = () => {
   return (
-    <div className={styles.sidebar_content}>
+    <div className={styles.sidebar}>
       <div className={styles.tags}>
         <h3>标签云</h3>
         <div className={styles.tags_content}>
@@ -21,11 +21,11 @@ const Sidebar: FC<IProps> = () => {
         </div>
         <div className={styles.more}>See more topics</div>
       </div>
-      <div className={styles.category}>
+      <div className={styles.categories}>
         <h3>分类</h3>
         <div className={styles.category_content}>
           {CATEGORIES.map((item, index) => (
-            <div key={index} className={styles.category}></div>
+            <div key={index} className={styles.category}>{item}</div>
           ))}
         </div>
       </div>
