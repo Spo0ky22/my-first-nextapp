@@ -10,6 +10,7 @@ export const formatNumber = (num: number) => {
     num /= 1000
     unitIndex++
   }
+  console.log(num, 'num')
 
   return num.toFixed(1).replace(/\.0$/, '') + units[unitIndex]
 }

@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React, { memo, useEffect, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import styles from './index.module.less'
 import { ART_LIST } from '@/utils/constants'
@@ -7,20 +7,51 @@ import { formatNumber } from '@/utils/utils'
 
 interface IProps {
   children?: ReactNode
-  id?: number
+  id?: string
 }
 
 const Detail: FC<IProps> = (props) => {
   const { id } = props
+  const [art, setArt] = useState<any>(null)
+  const [error, setError] = useState<string>('')
 
-  const art = ART_LIST[id as number]
+  // const art = ART_LIST[id]
+  useEffect(() => {
+    console.log('id', id)
+    if (id) {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(`/api/article/${id}`)
+          const data = await response.json()
+          console.log(data, 'data')
 
+          if (response.ok) {
+            setArt(data)
+          } else {
+            setError(data.error)
+          }
+        } catch (error) {
+          setError('An error occurred while fetching the post')
+        }
+      }
+
+      fetchData()
+    }
+  }, [id])
   function convertNewLinesToParagraphs(text: string) {
     return text.split('\n').map((line, index) => {
       const trimmedLine = line.trim()
       return trimmedLine ? <p key={index}>{trimmedLine}</p> : null
     })
   }
+  if (error) {
+    return <p>{error}</p>
+  }
+
+  if (!art) {
+    return <p>Loading...</p>
+  }
+
   return (
     <div className={styles.detail}>
       <div className={styles.title}>{art?.title}</div>
@@ -65,7 +96,7 @@ const Detail: FC<IProps> = (props) => {
         <div className={styles.pic}>
           <img src={art?.picture} />
         </div>
-        <div className={styles.art}>{convertNewLinesToParagraphs(art.content)}</div>
+        <div className={styles.art}>{convertNewLinesToParagraphs(art.context)}</div>
       </div>
     </div>
   )

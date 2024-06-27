@@ -13,7 +13,7 @@ const DetailPage: FC<IProps> = () => {
 
   return (
     <div>
-      <Detail id={Number(id)} />
+      <Detail id={id as string} />
     </div>
   )
 }

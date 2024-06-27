@@ -1,4 +1,4 @@
-import React, { memo, useCallback } from 'react'
+import React, { memo, useCallback, useEffect, useState } from 'react'
 import type { FC, ReactNode } from 'react'
 import styles from './index.module.less'
 import { ART_LIST } from '@/utils/constants'
@@ -12,10 +12,21 @@ interface IProps {
 }
 
 const Main: FC<IProps> = () => {
+  const [artList, setArtList] = useState([])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/api/article')
+      const data = await response.json()
+      setArtList(data)
+    }
+    fetchData()
+  }, [])
+
   return (
     <div className={styles.main}>
       <ul className={styles.list}>
-        {ART_LIST.map((item, index) => (
+        {artList.map((item: any, index) => (
           <li key={index}>
             <div className={styles.left}>
               <div className={styles.info}>
@@ -24,14 +35,16 @@ const Main: FC<IProps> = () => {
                 <div className={styles.circle}></div>
                 <div className={styles.date}>{item.date}</div>
               </div>
-              <Link className={styles.title} href={`/detail/${index}`}>
+              <Link className={styles.title} href={`/detail/${item.id}`}>
                 {item.title}
               </Link>
-              <div className={styles.content}>{item.content}</div>
+              <div className={styles.content}>{item.context}</div>
 
               <div className={styles.tags}>
-                {item.tags.map((tag, index) => (
-                  <div className={styles.tag}>{tag}</div>
+                {item.tags.map((tag: any, index: number) => (
+                  <div key={index} className={styles.tag}>
+                    {tag}
+                  </div>
                 ))}
               </div>
             </div>
