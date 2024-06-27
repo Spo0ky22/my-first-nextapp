@@ -31,14 +31,14 @@ export const ART_LIST = [
   },
   {
     title: 'Understanding JavaScript Closures',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/263382/665d2d2f-7a27-40e5-88da-162d1274e4bc.png',
+    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F605978%2F60384c72-76a2-4ce6-8e48-af8d6a520661.jpeg',
     author: 'Sara Jones',
     publish: 'JavaScript Daily',
     date: 'Mar 12, 2024',
     watch: 45000,
     like: 2300,
     comment: 110,
-    picture: 'https://res.cloudinary.com/practicaldev/image/fetch/s--6EJ3UdWI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5yxac6xhshv1zi8tkm5c.jpg',
+    picture: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fk0vurkahspzxqlnps9v0.png',
     content: `Closures are a fundamental concept in JavaScript. They allow a function to access variables from an enclosing scope or environment even after it leaves the scope in which it was declared.\n
     Closures are created whenever a function is created. They are used extensively in JavaScript for various tasks, including implementing private variables and functions, and for creating function factories.\n
     Let's explore how closures work and how to use them effectively in JavaScript.\n
@@ -65,14 +65,14 @@ export const ART_LIST = [
   },
   {
     title: "A Beginner's Guide to React Hooks",
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1025691/48430f91-7b9d-4693-8cf4-092a7a42be48.png',
+    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F784473%2F1770dea2-974d-4565-983b-8d4975713aa3.png',
     author: 'Emily White',
     publish: 'React Community',
     date: 'Apr 10, 2024',
     watch: 52000,
     like: 3400,
     comment: 150,
-    picture: 'https://res.cloudinary.com/practicaldev/image/fetch/s--Uab3tF-1--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oyh6rczhtunh8ofbpvh9.jpg',
+    picture: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fabmnnwl2a9fezo1avq17.png',
     content: `React Hooks provide a powerful and expressive way to manage state and side effects in functional components. Introduced in React 16.8, hooks allow you to use state and other React features without writing a class.\n
     In this guide, we'll cover the basics of React Hooks and how to use them effectively in your projects.\n
     The most commonly used hooks are \`useState\` and \`useEffect\`.\n
@@ -121,14 +121,14 @@ export const ART_LIST = [
   },
   {
     title: 'Exploring the Future of Web Development',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/729074/28b83c8a-64a8-4d57-a6f7-2bc7bdef0c7d.png',
+    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F194876%2Fd6e7cdc4-820c-4732-bb0f-24b9c2bd3f5f.jpeg',
     author: 'Michael Brown',
     publish: 'Web Dev Trends',
     date: 'May 5, 2024',
     watch: 61000,
     like: 4200,
     comment: 200,
-    picture: 'https://res.cloudinary.com/practicaldev/image/fetch/s--A2u6RPte--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jf6jm6toyt5t7bgxwn2x.jpg',
+    picture: 'https://media.dev.to/cdn-cgi/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2F9n6jpty8crhdn5citdco.jpeg',
     content: `Web development is an ever-evolving field with new technologies and trends emerging every year. Staying updated with these trends is crucial for developers who want to remain relevant and competitive in the industry.\n
     In this article, we'll explore the future of web development and what trends to watch out for in the coming years.\n
     One significant trend is the rise of Progressive Web Apps (PWAs). PWAs combine the best of web and mobile apps, providing a seamless experience for users. They are fast, reliable, and can work offline, making them a great option for businesses looking to improve user engagement.\n
@@ -142,14 +142,14 @@ export const ART_LIST = [
   },
   {
     title: 'Mastering CSS Grid Layout',
-    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/1156740/809c1b91-99f2-4f57-9b4a-89c645764a8f.png',
+    avatar: 'https://media.dev.to/cdn-cgi/image/width=50,height=50,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Fuser%2Fprofile_image%2F690534%2F3e6164cf-a0e6-49ad-b091-108b38cb7f23.png',
     author: 'Anna Smith',
     publish: 'CSS Tricks',
     date: 'Jun 2, 2024',
     watch: 48000,
     like: 3100,
     comment: 170,
-    picture: 'https://res.cloudinary.com/practicaldev/image/fetch/s--9wKZ0ShM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/h6f9hzs6mt5eyhf4ubik.jpg',
+    picture: 'https://res.cloudinary.com/practicaldev/image/fetch/s--Nx9oJR0j--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_100%2Cw_775/https://i.imgur.com/4UsqqGa.png',
     content: `CSS Grid Layout is a powerful tool for creating two-dimensional layouts on the web. It allows developers to design complex layouts with ease, providing a flexible and intuitive way to arrange content.\n
     In this article, we'll dive into the basics of CSS Grid and how to create complex layouts with ease.\n
     CSS Grid introduces a new layout system optimized for two-dimensional layouts, allowing you to create responsive and adaptive designs with less code. Here's an example to get you started:\n

@@ -2,7 +2,7 @@
   display: flex;
   margin: 0 auto;
   width: 1200px;
-  height: calc(100vh - 61px);
+  min-height: calc(100vh - 61px);
 
   .main {
     flex: 1;
@@ -14,7 +14,7 @@
         display: flex;
         border-bottom: #ccc solid 1px;
         padding: 40px 0;
-        height: 200px;
+        // height: 200px;
       }
 
       .left {
@@ -52,6 +52,10 @@
           font-size: 20px;
           font-weight: 600;
           color: #333;
+          cursor: pointer;
+        }
+        .title:hover {
+          color: #1e80ff;
         }
 
         .content {
@@ -69,17 +73,47 @@
           /* 控制最大高度，确保适应行数 */
           line-height: 1.6em;
           /* 控制行高 */
-
+        }
+        .tags {
+          display: flex;
+          margin-top: 30px;
+          .tag {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 21px;
+            background-color: #f3f3f3;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 16px;
+            &:hover {
+              background-color: #e3e3e3;
+            }
+          }
         }
       }
 
       .right {
         display: flex;
-        align-items: end;
+        flex-direction: column;
+        justify-content: end;
 
         img {
-          width: 120px;
-          height: 120px;
+          width: 150px;
+          height: 150px;
+        }
+        .watch_like {
+          display: flex;
+          color: #666;
+          column-gap: 30px;
+          margin-top: 30px;
+          justify-content: center;
+          height: 31px;
+          .like,
+          .watch {
+            display: flex;
+            column-gap: 3px;
+            align-items: center;
+          }
         }
       }
     }
@@ -135,7 +169,6 @@
 }
 
 .divider {
-  height: 100%;
   width: 1px;
   background-color: #f3f3f3;
 }
